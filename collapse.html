@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>collapse</title>
+    <style>
+    p{
+        color: #fff;
+        margin:0;
+        padding: 30px 40px;
+    }
+    h4{
+        color: #fff;
+        text-align: center;
+        margin:0;
+        padding: 25px;
+        border-bottom: 1px solid #4a4a4a;
+    }
+    .panel-group{
+        width:50%;
+        margin: auto;
+    }
+    .heading{
+        background-color: #333;
+    }
+    .collapse{
+        background-color: #3296b7;
+        overflow: hidden;
+    }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="panel-group">
+        <div class="panel">
+            <div class="heading">
+                <h4>one</h4>
+            </div>
+            <div class="collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="heading">
+                <h4>two</h4>
+            </div>
+            <div class="collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="heading">
+                <h4>three</h4>
+            </div>
+            <div class="collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="heading">
+                <h4>four</h4>
+            </div>
+            <div class="collapse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$(document).ready(function() {
+    $('.heading').click(function(){
+        $(this).next().fadeOut()
+    })
+    $('.heading').click(function(){
+        $(this).next().fadeIn()
+    })
+})
+</script>
+
+</html>
