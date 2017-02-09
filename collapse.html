@@ -5,33 +5,36 @@
     <meta charset="utf-8">
     <title>collapse</title>
     <style>
-    p{
+    p {
         color: #fff;
-        margin:0;
+        margin: 0;
         padding: 30px 40px;
     }
-    h4{
+    
+    h4 {
         color: #fff;
         text-align: center;
-        margin:0;
+        margin: 0;
         padding: 25px;
         border-bottom: 1px solid #4a4a4a;
     }
-    .panel-group{
-        width:50%;
+    
+    .panel-group {
+        width: 50%;
         margin: auto;
     }
-    .heading{
+    
+    .heading {
         background-color: #333;
     }
-    .collapse{
+    
+    .collapse {
         background-color: #3296b7;
         overflow: hidden;
     }
-    .close{
-        display: none;
+    
+    .close {
     }
-
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
@@ -74,12 +77,21 @@
 </body>
 <script>
 $(document).ready(function() {
-    $('.panel').click(function(){
-        $(this).children('.collapse').slideToggle()
-        $(this).children('.collapse').toggleClass('close')
-        $('.open').slideUp()
-        $('.open').removeClass('open')
-        $(this).children('.collapse').addClass('open')
+    $('.close').hide()
+    $('.panel').click(function() {
+        if ($(this).children('.collapse').hasClass('open')) {
+            $(this).children('.collapse').slideUp()
+            $(this).children('.collapse').addClass('close')
+            $('.open').removeClass('open')
+
+        } else {
+            $(this).children('.collapse').slideToggle()
+            $(this).children('.collapse').toggleClass('close')
+            $('.open').slideUp()
+            $('.open').removeClass('open')
+            $(this).children('.collapse').addClass('open')
+        }
+
     })
 })
 </script>
