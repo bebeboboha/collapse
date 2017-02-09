@@ -4,38 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>collapse</title>
-    <style>
-    p {
-        color: #fff;
-        margin: 0;
-        padding: 30px 40px;
-    }
-    
-    h4 {
-        color: #fff;
-        text-align: center;
-        margin: 0;
-        padding: 25px;
-        border-bottom: 1px solid #4a4a4a;
-    }
-    
-    .panel-group {
-        width: 50%;
-        margin: auto;
-    }
-    
-    .heading {
-        background-color: #333;
-    }
-    
-    .collapse {
-        background-color: #3296b7;
-        overflow: hidden;
-    }
-    
-    .close {
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./collapse.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
@@ -75,25 +44,6 @@
         </div>
     </div>
 </body>
-<script>
-$(document).ready(function() {
-    $('.close').hide()
-    $('.panel').click(function() {
-        if ($(this).children('.collapse').hasClass('open')) {
-            $(this).children('.collapse').slideUp()
-            $(this).children('.collapse').addClass('close')
-            $('.open').removeClass('open')
-
-        } else {
-            $(this).children('.collapse').slideToggle()
-            $(this).children('.collapse').toggleClass('close')
-            $('.open').slideUp()
-            $('.open').removeClass('open')
-            $(this).children('.collapse').addClass('open')
-        }
-
-    })
-})
-</script>
+<script type="text/javascript" src="collapse.js"></script>
 
 </html>

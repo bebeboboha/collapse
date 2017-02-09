@@ -1,0 +1,27 @@
+p {
+        color: #fff;
+        margin: 0;
+        padding: 30px 40px;
+    }
+    
+    h4 {
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 25px;
+        border-bottom: 1px solid #4a4a4a;
+    }
+    
+    .panel-group {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .heading {
+        background-color: #333;
+    }
+    
+    .collapse {
+        background-color: #3296b7;
+        overflow: hidden;
+    }
