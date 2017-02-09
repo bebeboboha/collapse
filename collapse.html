@@ -74,9 +74,9 @@
 </body>
 <script>
 $(document).ready(function() {
-    $('.heading').click(function(){
-        $(this).next().slideToggle()
-        $(this).next().toggleClass('close')
+    $('.panel').click(function(){
+        $(this).children('.collapse').slideToggle()
+        $(this).children('.collapse').toggleClass('close')
     })
 })
 </script>
