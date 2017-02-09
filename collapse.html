@@ -42,7 +42,7 @@
             <div class="heading">
                 <h4>one</h4>
             </div>
-            <div class="p1 collapse close">
+            <div class="collapse open">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="heading">
                 <h4>two</h4>
             </div>
-            <div class="p2 collapse close">
+            <div class="collapse close">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="heading">
                 <h4>three</h4>
             </div>
-            <div class="p3 collapse close">
+            <div class="collapse close">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
@@ -66,7 +66,7 @@
             <div class="heading">
                 <h4>four</h4>
             </div>
-            <div class="p4 collapse close">
+            <div class="collapse close">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
@@ -77,6 +77,9 @@ $(document).ready(function() {
     $('.panel').click(function(){
         $(this).children('.collapse').slideToggle()
         $(this).children('.collapse').toggleClass('close')
+        $('.open').slideUp()
+        $('.open').removeClass('open')
+        $(this).children('.collapse').addClass('open')
     })
 })
 </script>
